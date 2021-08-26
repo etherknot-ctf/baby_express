@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
           res.send('Hello World!')
 })
 
+app.get('/test.html',(req,res)=> {
+	res.sendFile(__dirname + '/test.html')
+})
+
 app.listen(port, () => {
           console.log(`Example app listening at http://localhost:${port}`)
 })
