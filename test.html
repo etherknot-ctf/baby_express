@@ -5,6 +5,16 @@
     </head>
 <body>
     <h1>こんにちは、えくすぷれす。</h1>
-     <p>ExpressでHTMLタグを作れるのかテストですと。</p>
+	<div id='info'></div>
+    <p>ExpressでHTMLタグを作れるのかテストですと。</p>
+
+	<script>
+        // document.write('<img src=x onerror=alert(1)></img>');
+        const hash = location.hash.substring(1)
+        document.write('<img src=x onerror=' + hash + '></img>');
+        // const hash = location.hash.substring(1)
+        // location.href=hash
+	</script>
+
 </body>
 </html>
